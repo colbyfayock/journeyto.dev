@@ -6,6 +6,9 @@ import useSite from 'hooks/use-site';
 import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Container from 'components/Container';
+import Form from 'components/Form';
+import FormRow from 'components/FormRow';
+import Input from 'components/Input';
 import Button from 'components/Button';
 import FeatureList from 'components/FeatureList';
 
@@ -32,17 +35,27 @@ export default function Home() {
             <code>pages/index.js</code>
           </p>
 
-          <p>
-            <Button>Buy Now</Button>
-          </p>
+          <Form className={styles.homeSignup} action="https://app.convertkit.com/forms/1840044/subscriptions" method="post">
+            <FormRow>
+              <p>
+                Sign up for <strong>FREE</strong> and start your journey right in your inbox!
+              </p>
+            </FormRow>
+            <FormRow>
+              <Input type="email" name="email_address" aria-label="Email Address" placeholder="Email Address" required />
+            </FormRow>
+            <FormRow>
+              <Button>Start Your Dev Journey</Button>
+            </FormRow>
+          </Form>
         </Container>
       </Section>
 
-      <FeatureList features={[
+      <FeatureList title="What's Inside" features={[
         '🤔 What is it?',
         '💪 What makes it so awesome?',
         '😢 What isn\'t it great at?'
-      ]} />
+      ]} backgroundColor="none" />
 
     </Layout>
   )

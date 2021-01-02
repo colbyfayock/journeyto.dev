@@ -1,3 +1,43 @@
+@import "styles/settings/__settings";
+
 .homeTitle {
-  color: red;
+  font-size: 4em;
+  text-align: center;
+}
+
+.homeSignup {
+
+  max-width: 20em;
+  margin: 0 auto;
+
+  p,
+  input,
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  input,
+  button {
+
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 2px 12px rgba($color-primary, 1);
+    }
+
+  }
+
+  input {
+    border-radius: $border-radius-small $border-radius-small 0 0;
+  }
+
+  button {
+    border-radius: 0 0 $border-radius-small $border-radius-small;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
 }

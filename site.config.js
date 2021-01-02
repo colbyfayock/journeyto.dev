@@ -1,6 +1,6 @@
 module.exports = {
-  siteName: 'My Product',
-  homepage: 'https://myproduct.com',
+  siteName: 'Journey to Dev',
+  homepage: 'https://journeyto.dev',
   authorName: 'Colby Fayock',
   authorUrl: 'https://twitter.com/colbyfayock',
   supportEmail: 'hello@colbyfayock.com'

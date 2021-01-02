@@ -27,6 +27,15 @@ const Footer = () => {
             <h3>Moar awesome!</h3>
             <ul>
               <li>
+                <a href="https://50reactprojects.com">50 Projects for React &amp; the Static Web</a>
+              </li>
+              <li>
+                <a href="https://jamstackhandbook.com">Jamstack Handbook</a>
+              </li>
+              <li>
+                <a href="https://spacejelly.dev">Space Jelly Store</a>
+              </li>
+              <li>
                 <a href="https://colbyfayock.com">colbyfayock.com</a>
               </li>
             </ul>
