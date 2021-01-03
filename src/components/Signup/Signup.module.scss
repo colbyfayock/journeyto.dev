@@ -1,0 +1,34 @@
+@import "styles/settings/__settings";
+
+.signup {
+
+  max-width: 20em;
+  margin: 4em auto 0;
+
+  p,
+  input,
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  input,
+  button {
+
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 2px 12px rgba($color-primary, 1);
+    }
+
+  }
+
+  input {
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+}

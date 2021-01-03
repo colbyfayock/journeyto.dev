@@ -6,10 +6,7 @@ import useSite from 'hooks/use-site';
 import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Container from 'components/Container';
-import Form from 'components/Form';
-import FormRow from 'components/FormRow';
-import Input from 'components/Input';
-import Button from 'components/Button';
+import Signup from 'components/Signup';
 import FeatureList from 'components/FeatureList';
 
 export default function Home() {
@@ -30,31 +27,39 @@ export default function Home() {
             { siteName }
           </h1>
 
-          <p>
-            Get started by editing{' '}
-            <code>pages/index.js</code>
+          <p className={styles.homeTagline}>
+            Build soft skills and achieve your goals without the
+            time, energy, and money needed to find a mentor.
           </p>
 
-          <Form className={styles.homeSignup} action="https://app.convertkit.com/forms/1840044/subscriptions" method="post">
-            <FormRow>
-              <p>
-                Sign up for <strong>FREE</strong> and start your journey right in your inbox!
-              </p>
-            </FormRow>
-            <FormRow>
-              <Input type="email" name="email_address" aria-label="Email Address" placeholder="Email Address" required />
-            </FormRow>
-            <FormRow>
-              <Button>Start Your Dev Journey</Button>
-            </FormRow>
-          </Form>
+          <Signup />
         </Container>
       </Section>
 
-      <FeatureList title="What's Inside" features={[
-        '🤔 What is it?',
-        '💪 What makes it so awesome?',
-        '😢 What isn\'t it great at?'
+      <Section className={styles.homeCopy}>
+        <Container>
+          <h2>What is Journey to Dev?</h2>
+          <p>
+            Journey to Dev is a 7-week email course that focuses on building
+            the soft skills that the everyday tutorial misses.
+          </p>
+          <p>
+            While there are thousands, if not millions, of high-quality resources
+            available to learn the nuances of code, often the human interactions
+            and relationships you build will help open up doors and advance
+            your career.
+          </p>
+        </Container>
+      </Section>
+
+      <FeatureList title="What can you expect?" features={[
+        'Where to start your development career',
+        'How to ask the right questions',
+        'What you should do to find a job',
+        'Why you should aspire to do more',
+        'How to become a good communicator',
+        'When it\'s important to focus on you',
+        'A guide to developer journey',
       ]} backgroundColor="none" />
 
     </Layout>

@@ -5,39 +5,25 @@
   text-align: center;
 }
 
-.homeSignup {
+.homeTagline {
+  max-width: 25em;
+  font-size: 2em;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  max-width: 20em;
-  margin: 0 auto;
+.homeCopy {
 
-  p,
-  input,
-  button {
-    width: 100%;
-    text-align: center;
-  }
+  text-align: center;
 
-  input,
-  button {
-
-    outline: none;
-
-    &:focus {
-      box-shadow: 0 2px 12px rgba($color-primary, 1);
-    }
-
-  }
-
-  input {
-    border-radius: $border-radius-small $border-radius-small 0 0;
-  }
-
-  button {
-    border-radius: 0 0 $border-radius-small $border-radius-small;
+  h2 {
+    font-size: 2.2em;
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
+
 
 }
