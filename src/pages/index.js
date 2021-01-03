@@ -59,7 +59,7 @@ export default function Home() {
         'Why you should aspire to do more',
         'How to become a good communicator',
         'When it\'s important to focus on you',
-        'A guide to developer journey',
+        'A guide to your developer journey',
       ]} backgroundColor="none" />
 
     </Layout>
