@@ -1,9 +1,22 @@
 @import "styles/settings/__settings";
+@import "styles/util/__util";
 
 .homeTitle {
-  font-size: 4em;
+
+  font-size: 10vw;
+  font-weight: 900;
   text-align: center;
-  margin-top: 0;
+  background-image: url('/images/journey-to-dev-header-01.jpg');
+  background-size: 100%;
+  background-position: top center;
+  padding-top: 25%;
+  background-repeat: no-repeat;
+  margin-top: -.5em;
+
+  @include gtMedium() {
+    font-size: 5em;
+  }
+
 }
 
 .homeTagline {
