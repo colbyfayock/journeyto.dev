@@ -8,7 +8,7 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import Button from 'components/Button';
 
-export default function GettingStarted() {
+export default function Success() {
   const twitterAction = createTweetAction({
     message: [
       '🚀 I just started my Journey to Dev with @colbyfayock\n',
@@ -31,23 +31,18 @@ export default function GettingStarted() {
     <Layout displayNav={false}>
 
       <Helmet>
-        <title>Getting Started</title>
+        <title>Success</title>
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       <Section>
         <Container>
           <h1 className={styles.homeTitle}>
-            One more step to get started!
+            Thanks for signing up!
           </h1>
 
           <p className={styles.homeTagline}>
-            <strong>Ready to start your journey?</strong>
-          </p>
-
-          <p className={styles.homeTagline}>
-            Check your inbox and <strong>click the confirm button</strong> in
-            your <a href="https://journeyto.dev/">Journey to Dev</a> welcome email.
+            I'm excited to start <a href="https://journeyto.dev/">this journey</a> with you.
           </p>
         </Container>
       </Section>
@@ -67,14 +62,10 @@ export default function GettingStarted() {
 
       <Section className={styles.homeCopy}>
         <Container>
-          <h2>Not seeing an email?</h2>
+          <h2>Make sure you get each issue of this newsletter</h2>
           <p>
-            Try checking your spam or Promotions tab of your email service. The email
-            should have come from Colby @ Journey to Dev (hello@colbyfayock.com).
-          </p>
-          <p>
-            To make sure you're getting the rest of the emails correctly, be sure to
-            add hello@colbyfayock.com to your contacts!
+            Be sure to drag the emails out of the Promotions tab and
+            add hello@colbyfayock.com to your contacts.
           </p>
         </Container>
       </Section>

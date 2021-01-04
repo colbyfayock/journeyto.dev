@@ -15,6 +15,11 @@ const Signup = ({ children, className, ...rest }) => {
   return (
     <Form className={styles.signup} action="https://app.convertkit.com/forms/1840044/subscriptions" method="post">
       <FormRow>
+        <p>
+          Enter your email and get this <strong>FREE</strong> newsletter right to your inbox!
+        </p>
+      </FormRow>
+      <FormRow>
         <Input type="email" name="email_address" aria-label="Enter your email address" placeholder="Email Address" required />
       </FormRow>
       <FormRow>

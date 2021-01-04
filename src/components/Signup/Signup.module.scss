@@ -12,13 +12,12 @@
     text-align: center;
   }
 
-  input,
   button {
 
     outline: none;
 
     &:focus {
-      box-shadow: 0 2px 12px rgba($color-primary, 1);
+      box-shadow: 0 2px 12px $color-primary;
     }
 
   }
