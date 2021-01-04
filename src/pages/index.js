@@ -55,12 +55,19 @@ export default function Home() {
       <FeatureList title="What can you expect?" features={[
         'Where to start your development career',
         'How to ask the right questions',
-        'What you should do to find a job',
-        'Why you should aspire to do more',
+        'What you can do to help find a job',
+        'When attention to detail helps you level up',
         'How to become a good communicator',
-        'When it\'s important to focus on you',
-        'A guide to your developer journey',
+        'Why it\'s important to focus on you',
+        'A starting guide to your developer journey',
       ]} backgroundColor="none" />
+
+      <Section className={styles.homeCopy}>
+        <Container>
+          <h2>Ready to get started?</h2>
+          <Signup />
+        </Container>
+      </Section>
 
     </Layout>
   )
