@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
 
@@ -9,9 +10,13 @@ import Footer from 'components/Footer';
 
 const Layout = ({ children, displayNav = true }) => {
   const { metadata = {} } = useSite();
-  const { siteName, homepage } = metadata;
+  const { siteName, homepage, description } = metadata;
 
+  const { pathname } = useRouter()
+
+  const pageUrl = `${homepage}${pathname}`;
   const pageTitle = siteName;
+  const ogImage = `${homepage}/images/journey-to-dev-open-graph-01.jpg`
 
   const helmetSettings = {
     defaultTitle: pageTitle,
@@ -21,11 +26,24 @@ const Layout = ({ children, displayNav = true }) => {
   return (
     <div className={styles.layoutContainer}>
       <Helmet {...helmetSettings}>
-        <link rel="icon" href="/favicon.ico" />
+        {pageTitle && <title>{ pageTitle }</title>}
+        <meta name="description" content={description} />
         <meta property="og:title" content={pageTitle} />
-        <meta property="og:url" content={homepage} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={pageTitle} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="2024" />
+        <meta property="og:image:height" content="1012" />
+        <meta property="og:image:alt" content="50 Projects for React & the Static Web - Learn by doing with this FREE ebook!" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={ogImage} />
+        <meta property="twitter:site" content="@colbyfayock" />
+        <meta property="twitter:creator" content="@colbyfayock" />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/images/favicon-512x512.png" />
       </Helmet>
 
       { displayNav && <Nav />}

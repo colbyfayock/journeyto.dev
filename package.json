@@ -1,7 +1,7 @@
 {
-  "name": "next-product-starter",
-  "title": "Next.js Product Starter",
-  "description": "Create a new product!",
+  "name": "journey-to-dev",
+  "title": "Journey to Dev",
+  "description": "Build soft skills and advance your developer career beyond the nuances of code.",
   "version": "0.1.0",
   "author": {
     "name": "Colby Fayock",
@@ -31,12 +31,12 @@
     "build": "next build && next export",
     "start": "next start"
   },
-  "homepage": "https://next-product-starter.vercel.app",
+  "homepage": "https://journeyto.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/next-product-starter"
+    "url": "https://github.com/colbyfayock/journeyto.dev"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/next-product-starter/issues"
+    "url": "https://github.com/colbyfayock/journeyto.dev/issues"
   }
 }

@@ -18,7 +18,6 @@ export default function Home() {
 
       <Helmet>
         <title>{ siteName }</title>
-        <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       <Section>

@@ -32,7 +32,6 @@ export default function GettingStarted() {
 
       <Helmet>
         <title>Getting Started</title>
-        <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       <Section>

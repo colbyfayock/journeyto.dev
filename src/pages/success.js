@@ -32,7 +32,6 @@ export default function Success() {
 
       <Helmet>
         <title>Success</title>
-        <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
       <Section>
