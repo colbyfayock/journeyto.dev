@@ -3,6 +3,7 @@
 
 .homeTitle {
 
+  color: $color-purple-800;
   font-size: 10vw;
   font-weight: 900;
   text-align: center;
@@ -15,6 +16,10 @@
 
   @include gtMedium() {
     font-size: 5em;
+  }
+
+  @include gtLarge() {
+    font-size: 6em;
   }
 
 }
