@@ -1,9 +1,11 @@
-import 'styles/globals.scss';
+import { Helmet } from 'react-helmet';
 
 import siteConfig from '../../site.config';
 
 import useSite from 'hooks/use-site';
 import SiteContext from 'context/site-context';
+
+import 'styles/globals.scss';
 
 const context = {
   metadata: siteConfig
@@ -11,9 +13,12 @@ const context = {
 
 function App({ Component, pageProps }) {
   return (
-    <SiteContext.Provider value={context}>
-      <Component {...pageProps} />
-    </SiteContext.Provider>
+    <>
+      <Helmet htmlAttributes={{ lang: 'en' }} />
+      <SiteContext.Provider value={context}>
+        <Component {...pageProps} />
+      </SiteContext.Provider>
+    </>
   );
 }
 

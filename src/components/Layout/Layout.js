@@ -36,7 +36,7 @@ const Layout = ({ children, displayNav = true }) => {
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="2024" />
         <meta property="og:image:height" content="1012" />
-        <meta property="og:image:alt" content="50 Projects for React & the Static Web - Learn by doing with this FREE ebook!" />
+        <meta property="og:image:alt" content={`${siteName} - ${description}`} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" content={ogImage} />
         <meta property="twitter:site" content="@colbyfayock" />
