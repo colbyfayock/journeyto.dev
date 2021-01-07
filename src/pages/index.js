@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
 
           <p className={styles.homeTagline}>
-            Build soft skills and achieve your goals without the
+            Build human-centered skills and achieve your goals without the
             time, energy, and money needed to find a mentor.
           </p>
 
@@ -40,7 +40,7 @@ export default function Home() {
           <h2>What is Journey to Dev?</h2>
           <p>
             Journey to Dev is a 7-week email course that focuses on building
-            the soft skills that the everyday tutorial misses.
+            the human-centered skills that the everyday tutorial misses.
           </p>
           <p>
             While there are thousands, if not millions, of high-quality resources
