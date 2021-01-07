@@ -16,7 +16,7 @@ const Layout = ({ children, displayNav = true }) => {
 
   const pageUrl = `${homepage}${pathname}`;
   const pageTitle = siteName;
-  const ogImage = `${homepage}/images/journey-to-dev-open-graph-01.jpg`
+  const ogImage = `${homepage}/images/journey-to-dev-open-graph-02.jpg`
 
   const helmetSettings = {
     defaultTitle: pageTitle,
