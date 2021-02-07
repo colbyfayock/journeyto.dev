@@ -15,6 +15,8 @@ const context = {
 }
 
 function App({ Component, pageProps }) {
+  const router = useRouter();
+
   /**
    * handleRouteChange
    */

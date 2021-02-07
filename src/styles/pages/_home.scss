@@ -12,7 +12,8 @@
   background-position: top center;
   padding-top: 25%;
   background-repeat: no-repeat;
-  margin-top: -.5em;
+  margin-top: -1em;
+  margin-bottom: .5em;
 
   @include gtMedium() {
     font-size: 5em;
