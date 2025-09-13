@@ -37,20 +37,28 @@ const Signup = ({ children, className, ...rest }) => {
   }
 
   return (
-    <Form className={styles.signup} action="https://app.convertkit.com/forms/1840044/subscriptions" method="post" onSubmit={handleOnSubmit}>
-      <FormRow>
-        <p>
-          Enter your email and get this <strong>FREE</strong> newsletter right to your inbox!
-        </p>
-      </FormRow>
-      <FormRow>
-        <Input type="email" name="email_address" aria-label="Enter your email address" placeholder="Email Address" required />
-      </FormRow>
-      <FormRow>
-        <Button disabled={hasSubmitted}>Start Your Dev Journey</Button>
-      </FormRow>
-    </Form>
+    <div>
+      <p className={styles.offline}>
+        <strong>Journey to Dev is temporarily offline.</strong> Signups will be available again soon!
+      </p>
+    </div>
   )
+
+  // return (
+  //   <Form className={styles.signup} action="https://app.convertkit.com/forms/1840044/subscriptions" method="post" onSubmit={handleOnSubmit}>
+  //     <FormRow>
+  //       <p>
+  //         Enter your email and get this <strong>FREE</strong> newsletter right to your inbox!
+  //       </p>
+  //     </FormRow>
+  //     <FormRow>
+  //       <Input type="email" name="email_address" aria-label="Enter your email address" placeholder="Email Address" required />
+  //     </FormRow>
+  //     <FormRow>
+  //       <Button disabled={hasSubmitted}>Start Your Dev Journey</Button>
+  //     </FormRow>
+  //   </Form>
+  // )
 }
 
 export default Signup;
