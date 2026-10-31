@@ -1,0 +1,47 @@
+---
+import Layout from '../components/Layout.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import styles from '../styles/App.module.scss';
+import { createTweetHref } from '../lib/social.mjs';
+
+const tweetHref = createTweetHref();
+---
+
+<Layout title="Getting Started">
+  <Section>
+    <Container>
+      <h1 class={styles.homeTitle}>One more step to get started!</h1>
+      <p class={styles.homeTagline}><strong>Ready to start your journey?</strong></p>
+      <p class={styles.homeTagline}>
+        Check your inbox and <strong>click the confirm button</strong> in
+        your <a href="https://journeyto.dev/">Journey to Dev</a> welcome email.
+      </p>
+    </Container>
+  </Section>
+
+  <Section class={styles.homeCopy}>
+    <Container>
+      <h2>Share your journey with others</h2>
+      <p>Let everyone know you're starting your journey and find others to jump in with you!</p>
+      <p>
+        <Button href={tweetHref} target="_blank" rel="noopener noreferrer">Share on Twitter</Button>
+      </p>
+    </Container>
+  </Section>
+
+  <Section class={styles.homeCopy}>
+    <Container>
+      <h2>Not seeing an email?</h2>
+      <p>
+        Try checking your spam or Promotions tab of your email service. The email
+        should have come from Colby @ Journey to Dev (hello@colbyfayock.com).
+      </p>
+      <p>
+        To make sure you're getting the rest of the emails correctly, be sure to
+        add hello@colbyfayock.com to your contacts!
+      </p>
+    </Container>
+  </Section>
+</Layout>

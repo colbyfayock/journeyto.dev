@@ -1,0 +1,8 @@
+---
+import styles from '../styles/components/Button.module.scss';
+const { href, target, rel, ariaLabel } = Astro.props;
+---
+
+<a class={styles.button} href={href} target={target} rel={rel} aria-label={ariaLabel}>
+  <slot />
+</a>

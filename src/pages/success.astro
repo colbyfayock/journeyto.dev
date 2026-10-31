@@ -1,0 +1,41 @@
+---
+import Layout from '../components/Layout.astro';
+import Section from '../components/Section.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+import styles from '../styles/App.module.scss';
+import { createTweetHref } from '../lib/social.mjs';
+
+const tweetHref = createTweetHref();
+---
+
+<Layout title="Success">
+  <Section>
+    <Container>
+      <h1 class={styles.homeTitle}>Thanks for signing up!</h1>
+      <p class={styles.homeTagline}>
+        I'm excited to start <a href="https://journeyto.dev/">this journey</a> with you.
+      </p>
+    </Container>
+  </Section>
+
+  <Section class={styles.homeCopy}>
+    <Container>
+      <h2>Share your journey with others</h2>
+      <p>Let everyone know you're starting your journey and find others to jump in with you!</p>
+      <p>
+        <Button href={tweetHref} target="_blank" rel="noopener noreferrer">Share on Twitter</Button>
+      </p>
+    </Container>
+  </Section>
+
+  <Section class={styles.homeCopy}>
+    <Container>
+      <h2>Make sure you get each issue of this newsletter</h2>
+      <p>
+        Be sure to drag the emails out of the Promotions tab and
+        add hello@colbyfayock.com to your contacts.
+      </p>
+    </Container>
+  </Section>
+</Layout>
