@@ -5,7 +5,6 @@ const site = {
   authorName: 'Colby Fayock',
   authorUrl: 'https://twitter.com/colbyfayock',
   supportEmail: 'hello@colbyfayock.com',
-  googleAnalyticsId: 'G-PC9CPR91D1',
 };
 
 export default site;

@@ -34,12 +34,11 @@ const ogImage = `${site.homepage}/images/journey-to-dev-open-graph-02.jpg`;
     <meta property="twitter:creator" content="@colbyfayock" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/images/favicon-512x512.png" />
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAnalyticsId}`}></script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script is:inline async src="https://plausible.io/js/pa-3qAD7fuRZkLwcXvKJOBwp.js"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PC9CPR91D1', { page_path: window.location.pathname });
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
   </head>
   <body>
