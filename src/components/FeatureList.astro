@@ -1,0 +1,18 @@
+---
+import Container from './Container.astro';
+import Section from './Section.astro';
+import styles from '../styles/components/FeatureList.module.scss';
+
+const { title = 'Features', backgroundColor = 'primary', features = [] } = Astro.props;
+---
+
+<Section backgroundColor={backgroundColor}>
+  <div class={styles.featureList}>
+    <Container>
+      <h2>{title}</h2>
+      <ul>
+        {features.map((feature) => <li>{feature}</li>)}
+      </ul>
+    </Container>
+  </div>
+</Section>

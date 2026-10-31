@@ -8,25 +8,16 @@
     "email": "hello@colbyfayock.com",
     "url": "https://twitter.com/colbyfayock"
   },
-  "dependencies": {
-    "next": "^15.0.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^5.3.0",
-    "sass": "^1.80.6"
-  },
   "keywords": [
-    "nextjs",
-    "next js",
+    "astro",
     "sass",
     "css"
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "homepage": "https://journeyto.dev",
   "repository": {
@@ -35,5 +26,12 @@
   },
   "bugs": {
     "url": "https://github.com/colbyfayock/journeyto.dev/issues"
+  },
+  "devDependencies": {
+    "astro": "7.4.4",
+    "sass": "1.107.1"
+  },
+  "overrides": {
+    "picomatch@^2": "2.3.2"
   }
 }

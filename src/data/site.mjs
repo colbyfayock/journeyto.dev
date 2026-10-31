@@ -1,0 +1,11 @@
+const site = {
+  siteName: 'Journey to Dev',
+  homepage: 'https://journeyto.dev',
+  description: 'Build human-centered skills and advance your developer career beyond the nuances of code.',
+  authorName: 'Colby Fayock',
+  authorUrl: 'https://twitter.com/colbyfayock',
+  supportEmail: 'hello@colbyfayock.com',
+  googleAnalyticsId: 'G-PC9CPR91D1',
+};
+
+export default site;
